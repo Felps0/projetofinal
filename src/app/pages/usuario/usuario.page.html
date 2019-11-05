@@ -1,8 +1,13 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Cadastro de usuário</ion-title>
+<ion-toolbar color="dark">
+    <ion-title color="light">
+      <ion-col>
+    <img src="assets/barbearia.png" width="100px" height="100px">
+      Cadastrar Cliente
+      </ion-col>
+    </ion-title>
   </ion-toolbar>
-</ion-header>
+
+
 
 
 <ion-content>
@@ -32,8 +37,8 @@
     <ion-text color="danger" *ngIf="(p.value != c.value) && c.dirty">Senhas diferentes!</ion-text>
 
     <ion-item lines="none">
-      <ion-button type="submit" [disabled]="fc.invalid || (p.value != c.value)">Salvar</ion-button>
-      <ion-button type="reset" color="danger" [routerLink]="['/']">Cancelar</ion-button>
+      <ion-button type="submit"  color="dark" [disabled]="fc.invalid || (p.value != c.value)" >Salvar</ion-button>
+      <ion-button type="reset" color="dark" [routerLink]="['/']">Cancelar</ion-button>
     </ion-item>
   </form>
     
