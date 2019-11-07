@@ -9,12 +9,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./perfil-usuario.page.scss'],
 })
 export class PerfilUsuarioPage implements OnInit {
- 
+  
+  protected usuario: Usuario = new Usuario;
+  protected id: string = null;
 
-  constructor() { }
+  constructor(
+    protected activatedRoute:ActivatedRoute,
+    protected usuarioService: UsuarioService,
+  ) { }
 
   ngOnInit() {
-   
+    this.id = this.activatedRoute.snapshot.paramMap.get("id");
+    if (this.id) {
+      this.usuarioService.get(this.id).subscribe(
+        res => {
+          this.usuario = res
+        },
+        erro => this.id = null
+      )
+    }
   }
 
 }
