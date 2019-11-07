@@ -18,22 +18,22 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'usuario',
+        path: 'add-usuario',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../pages/usuario/usuario.module').then(m => m.UsuarioPageModule)
+              import('../pages/add-usuario/add-usuario.module').then(m => m.AddUsuarioPageModule)
           }
         ]
       },
       {
-        path: 'Usuario/:id',
+        path: 'add-Usuario/:id',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../pages/usuario/usuario.module').then(m => m.UsuarioPageModule)
+              import('../pages/add-usuario/add-usuario.module').then(m => m.AddUsuarioPageModule)
           }
         ]
       },
