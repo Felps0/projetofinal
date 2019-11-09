@@ -33,7 +33,7 @@ export class AddUsuarioPage implements OnInit {
           this.presentAlert("Aviso", "Atualizado!");
           form.reset();
           this.usuario = new Usuario;
-          this.router.navigate(['/tabs/listUsuario']);
+          this.router.navigate(['/tabs/list-usuario']);
         },
         erro => {
           console.log("Erro: " + erro);
@@ -46,7 +46,7 @@ export class AddUsuarioPage implements OnInit {
           this.presentAlert("Aviso", "Cadastrado!");
           form.reset();
           this.usuario = new Usuario;
-          this.router.navigate(['/tabs/listUsuario']);
+          this.router.navigate(['/tabs/list-usuario']);
         },
         erro => {
           console.log("Erro: " + erro);

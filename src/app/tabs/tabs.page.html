@@ -1,4 +1,5 @@
 <ion-tabs>
+  
 
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="tab1">
@@ -6,8 +7,9 @@
       <ion-label>Cortes</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="add-usuario">
+    <ion-tab-button tab="list-usuario">
       <ion-icon name="calendar"></ion-icon>
+      <ion-badge color="danger">{{quantUsuario}}</ion-badge>
       <ion-label>Cadastramento</ion-label>
     </ion-tab-button>
 

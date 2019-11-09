@@ -1,6 +1,6 @@
 export class Usuario {
     id: String;
-    usuario: String;
+    nome: String;
     email:string;
     tel:string;
     pws:string;

@@ -18,6 +18,16 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'list-usuario',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../pages/list-usuario/list-usuario.module').then(m => m.ListUsuarioPageModule)
+          }
+        ]
+      },
+      {
         path: 'add-usuario',
         children: [
           {
@@ -28,7 +38,7 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'add-Usuario/:id',
+        path: 'add-usuario/:id',
         children: [
           {
             path: '',
@@ -37,6 +47,17 @@ const routes: Routes = [
           }
         ]
       },
+      {
+        path: 'login',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../pages/login/login.module').then(m => m.LoginPageModule)
+          }
+        ]
+      },
+      
       {
         path: 'tab3',
         children: [
