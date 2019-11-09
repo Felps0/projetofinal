@@ -23,7 +23,7 @@ export class ListUsuarioPage implements OnInit {
   }
 
   editar(key) {
-    this.router.navigate(['/tabs/usuario', key]);
+    this.router.navigate(['/tabs/add-usuario', key]);
   }
 
   async doRefresh(event) {
