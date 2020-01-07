@@ -5,13 +5,14 @@
 export const environment = {
   production: false, 
   firebaseConfig : {
-    apiKey: "AIzaSyAEe2-6AHDGbf_QY2Mo6XsYbiZ13eaR674",
-    authDomain: "barbearia-90202.firebaseapp.com",
-    databaseURL: "https://barbearia-90202.firebaseio.com",
-    projectId: "barbearia-90202",
-    storageBucket: "barbearia-90202.appspot.com",
-    messagingSenderId: "299166325400",
-    appId: "1:299166325400:web:fb6961290231cab1548eed"
+    apiKey: "AIzaSyCSe1GeCYec57PXDcSf0OgIZrJcRiZ0Wts",
+    authDomain: "barbeshop-router.firebaseapp.com",
+    databaseURL: "https://barbeshop-router.firebaseio.com",
+    projectId: "barbeshop-router",
+    storageBucket: "barbeshop-router.appspot.com",
+    messagingSenderId: "342937687765",
+    appId: "1:342937687765:web:2d9595c9df84558a29f45c",
+    measurementId: "G-ZKKEHQZ720"
 }
 }
 /*
